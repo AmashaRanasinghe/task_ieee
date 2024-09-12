@@ -178,20 +178,20 @@
 
         <script>
             let lastScrollTop = 0;
-            const navbar = document.querySelector('nav'); // Select the nav element
+            const navbar = document.querySelector('nav');
     
             window.addEventListener('scroll', function() {
                 let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 
                 if (scrollTop > lastScrollTop) {
                     // Scrolling down
-                    navbar.style.top = "-100px"; // Adjust based on the nav height
+                    navbar.style.top = "-100px";
                 } else {
                     // Scrolling up
                     navbar.style.top = "0";
                 }
                 
-                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
             });
         </script>
         <script>
@@ -203,8 +203,6 @@
                     answerElement.style.display = "none";
                 }
             }
-    
-            // Initialize all answers as hidden
             document.querySelectorAll('.answer').forEach(answer => {
                 answer.style.display = 'none';
             });
