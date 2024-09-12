@@ -111,23 +111,24 @@ h1{
     margin-left: 10%;
     margin-right: 10%;
     position: relative;
-    
+    margin-bottom: 100px;
 }
 
 .container{
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .container-left{
     position: relative;
-    margin-left: 5%;
+    width: 20%;
 }
 
 .container-right{
     position: relative;
-    margin-left: 10%;
+    width: 70%;
 }
 
 .timeline h2{
