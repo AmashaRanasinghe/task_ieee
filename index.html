@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ReidXtreme4</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="imgs/logor.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <div class="home">
+            
+            <div class="overlay"><img class="mainimg" src="imgs/home.jpg" alt="main_image"> </div>
+            <img class="mlogo" src="imgs/mlogo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#prizes">Prizes</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <br>
+        <br>
+        <p>A premier competitive programming hackathon by the IEEE and ACM Student Chapters of UCSC</p>
+        
+
+        <div class="about">
+            <h1>ABOUT</h1>
+            <p>ReidXtreme 3.0 is the premier competitive programming hackathon organized by the IEEE Student Branch of UCSC in collaboration with the ACM Student Chapter of UCSC. This event is designed to elevate the competitive programming skills of undergraduate students, preparing them for the tech industry's competitive demands. ReidXtreme 3.0 consists of two rounds: an initial qualifying round and a final round.</p>
+        </div>
+
+        <div class="timeline">
+            <h1>TIMELINE</h1>
+        </div>
+
+        <h1>PRIZES</h1>
+        <div class="prize">
+            <div class="box2">
+                <img src="imgs/2.png" alt="2nd Prize" class="prize-img">
+                    <h1>2<sup>nd</sup> Place</h1>
+                    <p>Rs. 20 000</p>
+            </div>
+            <div class="box1">
+                <img src="imgs/1.png" alt="1st Prize" class="prize-img">
+                <h1>1<sup>st</sup> Place</h1>
+                <p>Rs. 30 000</p>
+            </div>
+            <div class="box3">
+                <img src="imgs/3.png" alt="3rd Prize" class="prize-img">
+                    <h1>3<sup>rd</sup> Place</h1>
+                    <p>Rs. 15 000</p>
+            </div>
+        </div>
+
+            
+        <div class="faq">
+            <h1>FAQ</h1>
+            <div class="question" onclick="toggleAns(this)">
+                <h2>What is ReidXtreme 3.0?</h2> 
+            </div>
+            <div class="answer">
+                <p>ReidXtreme 3.0 is the premier competitive programming hackathon organized by the IEEE Student Branch in collaboration with the ACM Student Chapter at the University of Colombo School of Computing. It's designed to enhance the competitive programming skills of undergraduate students and prepare them for the tech industry.</p>
+            </div>
+            <hr width="100%">
+            <div class="question" onclick="toggleAns(this)">
+            <h2>How is the event structured?</h2> 
+            </div>
+            <div class="answer">
+                <p>ReidXtreme 3.0 consists of two rounds: an initial qualifying round and a final round. The top 10 teams from the initial round advance to the finals, which is a 12-hour in-person hackathon.</p>    
+            </div>
+            <hr width="100%">
+            <div class="question" onclick="toggleAns(this)">
+            <h2>Who can participate in ReidXtreme 3.0?</h2> 
+            </div>
+            <div class="answer">
+               <p>The event is primarily aimed at undergraduate students looking to elevate their competitive programming skills and gain exposure to the tech industry.</p>
+            </div>
+            <hr width="100%">
+            <div class="question" onclick="toggleAns(this)">
+            <h2>What are the benifits of participating in ReidXtreme 3.0?</h2> 
+            </div>
+            <div class="answer">
+                <p>Participants can enhance their technical competencies, gain valuable industry exposure, network with peers and professionals in the tech field, and prepare for global competitions like the IEEEXtreme hackathon.</p>    
+            </div>
+            <hr width="100%">
+            <div class="question" onclick="toggleAns(this)">
+            <h2>How is ReidXtreme 3.0 different from previous versions?</h2> 
+            </div>
+            <div class="answer">
+               <p>Unlike ReidXtreme 1.0 and 2.0 which were held online, ReidXtreme 3.0 will be hosted physically, providing an enhanced learning experience and better networking opportunities.</p>
+            </div>
+        </div>
+            
+        </div>
+
+        <div class="contact">
+
+        </div>
+
+        <footer>
+            <div class="img">
+                <img src="imgs/SB-logo-white.png">
+                <img src="imgs/acm-removebg-preview.png"> 
+            </div>
+            
+            <ul class="social-links">
+                <li><a href="https://web.facebook.com/ucscacm?_rdc=1&_rdr" title="UCSC ACM Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/ucsc.acm" title="UCSC ACM Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/ucscacmstudentchapter/posts/?feedView=all" title="UCSC ACM LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li class="separator"></li>
+                <li><a href="https://www.linkedin.com/company/reidxtreme/" title="ReidXtreme LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li class="separator"></li>
+                <li><a href="https://web.facebook.com/IEEE.UCSC?_rdc=1&_rdr" title="IEEE UCSC Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/ucsc.ieee" title="IEEE UCSC Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/ieee-student-branch-ucsc/" title="IEEE UCSC LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            
+            <p>&copy; 2024 ReidXtreme - All Rights Reserved.</p>
+        </footer>
+
+        <script>
+            let lastScrollTop = 0;
+            const navbar = document.querySelector('nav'); // Select the nav element
+    
+            window.addEventListener('scroll', function() {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    navbar.style.top = "-60px"; // Adjust based on the nav height
+                } else {
+                    // Scrolling up
+                    navbar.style.top = "0";
+                }
+                
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+            });
+        </script>
+        <script>
+            function toggleAns(questionElement) {
+                const answerElement = questionElement.nextElementSibling;
+                if (answerElement.style.display === "none" || answerElement.style.display === "") {
+                    answerElement.style.display = "block";
+                } else {
+                    answerElement.style.display = "none";
+                }
+            }
+    
+            // Initialize all answers as hidden
+            document.querySelectorAll('.answer').forEach(answer => {
+                answer.style.display = 'none';
+            });
+        </script>
+    </body>
+</html>
